@@ -1,0 +1,105 @@
+extends common/layout
+
+block content
+    main
+        section
+            .container
+                h2 How Dreamshare works?
+                .three-block
+                    .one-block
+                        .one-small
+                            a(href='')
+                                input.button-step(type='button', value='STEP 1')
+                            h3 Sed leo enim, condimentum
+                            p
+                                | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+
+                    .two-block
+                        .two-small
+                            input.button-step(type='button', value='STEP 2')
+                            h3 Morbi velit risus
+                            p
+                                | Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+
+                    .three-three
+                        .three-small
+                            input.button-step(type='button', value='STEP 3')
+                            h3 Sed leo enim, condimentum
+                            p
+                                | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+
+        section
+            .container
+                h2 Meet a partner for your best holiday
+                .block-portret
+                    .four-block
+                        .portret-one
+                            .four-one
+                                .portret-img
+                                    .bradly
+
+                                        <div class="icon-block">
+                                        <i class="fa fa-music" aria-hidden="true"></i>
+                                        </div>
+                                p.name Bradley Hunter
+                                p.read Based in Chicago. I love playing tennis and loud music.
+                            .four-one
+                                .portret-img
+                                    .maria
+
+                                p.name Marie Bennett
+                                p.read Currently living in Colorado. Lover of art, languages and travelling.
+                        .portret-two
+                            .four-one
+                                .portret-img
+                                    .diana
+
+                                p.name Diana Wells
+                                p.read
+                                | Living in Athens, Greece. I love black and white classics, chillout music and green tea.
+                        .four-one
+                            .portret-img
+                                .pierce
+                        
+                            p.name Christopher Pierce
+                            p.read Star Wars fanatic. I have a persistent enthusiasm to create new things.
+                    .see-block
+                        input.see(type='button', value='See other partners')
+
+        section
+            .container
+                h2 Discover holiday activity ideas
+                .photo-block
+                    .pohoto-one
+                        .one-left
+                            a(href='#') Sports and Activis
+                        .one-center
+                            a(href='#') Wellness and Health
+                        .one-right
+                            a(href='#') Extreme Sports and Expeditions
+                    .photo-two
+                        .two-left
+                             a(href='@') Games
+                        .two-right
+                            a(href='#') Culture and Education
+                    .photo-three
+                        .three-left
+                            a(href='#') Enjomet and Relaxation
+                        .three-right
+                            a(href='#') Trevelling
+
+        section
+            .container
+                .send-mail
+                    h2 Crate your holiday activity
+                    form.mail-sumbit(action='email')
+                        p Hi! What are your holiday interests?
+                        input#email-form.email-forms(type='email', name='Email', placeholder='Enter your insterests')
+                        input.submit(type='submit', value='Search partners')
+                        
+
+
+
+
+
+    

@@ -1,0 +1,112 @@
+footer{
+    border-top: 2px solid #FF4E50;
+
+    .container{
+        width: 940px;
+        margin: 0px auto;
+
+        @media screen and (max-width:940px){
+            width: 768px;
+        }//END MEDIA 940
+
+        @media screen and (max-width:775px){
+            width: 692px;
+        }//END MEDIA 940
+
+        @media screen and (max-width:700px){
+            width: 670px;
+        }//END MEDIA 940
+
+        @media screen and (max-width:675px){
+            width: 576px;
+        }//END MEDIA 940
+
+        @media screen and (max-width:576px){
+            width: 400px;
+        }//END MEDIA 940
+
+        @media screen and (max-width:400px){
+            width: 320px;
+        }//END MEDIA 940
+
+
+    }
+
+    .footer-block{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 38px;
+        margin-bottom: 36px;
+
+        @media screen and (max-width:400px) {
+            flex-direction: column;   
+            align-items: center;      
+        }//END MEDIA
+
+        .footer-left{
+            @media screen and (max-width:400px) {
+                margin-bottom: 10px; 
+            }//END MEDIA
+            p{
+                font-family: 'Montserrat';
+                font-size: 16px;
+                color: #FF4E50;
+                font-weight: normal;
+            }
+        }
+
+        .footer-center{
+            @media screen and (max-width:400px) {
+                margin-bottom: 10px; 
+            }//END MEDIA
+
+            .main{
+                @media screen and (max-width:400px){
+                    width: 200px;
+                }
+                ul {
+                    @media screen and (max-width:400px) {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                }
+
+            }
+
+            p{
+                @extend %footer-center-p;
+            }
+            
+            li{
+                margin-bottom: 10px;
+                @media screen and (max-width:400px) {
+                    margin-left: 10px; 
+                }//END MEDIA
+            }
+
+            li a{
+                font-family: 'Roboto-Light';
+                font-size: 14px;
+                text-decoration: none;
+                color: #999999;
+            }
+        }
+
+        .footer-center-two{
+            p{
+                @extend %footer-center-p;
+            }
+        }
+
+        .footer-right{
+            p{
+                text-align: end;
+                margin-bottom: 11px;
+                font-size: 10px;
+                font-weight: 700;
+                color: #cccccc;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
